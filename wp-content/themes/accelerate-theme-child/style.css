@@ -19,25 +19,55 @@ Text Domain:  accelerate-theme-child
 .button{
   background: none repeat scroll 0 0 #45ac9d;
 }
-.blog-post {
+.blog-post, .twitter-feed{
   width: 50%;
   float: left;
   margin-bottom: 2em;
 }
-.blog-post h4 {
+.blog-post h4, .twitter-feed h4{
   font: 700 1em/1.75 'monsterrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
   margin: 2em 0 .5em;
 }
-.blog-post h3 {
+.blog-post h3, h3.widget-title {
   font-size: 1.5em;
 }
-.read-more-link {
+.read-more-link, .follow-us-link{
   font-family: 'monsterrat';
   font-weight: 700;
   color: #45ac9d;
   text-transform: uppercase;
+}
+.widget-area{
+  width: 100%;
+}
+p.follow-us-link{
+  padding-left: 20px
+}
+/* mailchimp widget*/
+  .mailchimp-email{
+  font: 1em 'OpenSans', Arial, sans-serif;
+  line-height: 2;
+  height: 2.3125em;
+  width: 100%;
+  border: 1px solid #BFBFBF;
+  padding: 0 3px;
+  background: #fff;
+  vertical-align: middle;
+  }
+  input.mailchimp-submit{
+    font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+    color: #fff;
+    background: #45ac9d;
+    border: none;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+
+  }
+/*social links bottom of posts*/
+.naked-social-share ul{
+  display: inline;
 }
 /* case studies */
 aside.case-study-sidebar {
@@ -157,7 +187,7 @@ h2#about-page-title{
 div.content-section{
   margin: 15px 0px;
 }
-div.content-section::after, #about-us-page-bottom::after{
+div.content-section::after, #about-us-page-bottom::after, .site-content::after{
   content: "";
   clear: both;
   display: table;
@@ -199,6 +229,10 @@ p.about-page-section-text{
 }
 .about-us-button{
 
+}
+.site-content .twitter-feed{
+  float: left;
+  width: 50%;
 }
 /* 404 page*/
 #missing-page-container{

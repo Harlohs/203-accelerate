@@ -60,6 +60,15 @@ get_header(); ?>
 					<?php endwhile; ?>
 					<?php wp_reset_query(); ?>
  			</div>
+			<div class="">
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+					<div id="secondary" class="widget-area twitter-feed" role="complementary">
+							<h4 class="twitter-feed-title">Recent Tweet</h4>
+						<?php dynamic_sidebar( 'sidebar-2' ); ?>
+						<p class="follow-us-link"><a href="https://twitter.com/Skillcrush"></a>Follow Us ›</p>
+					</div>
+				</div>
+<?php endif; ?>
 		</div>
 	</section>
 
